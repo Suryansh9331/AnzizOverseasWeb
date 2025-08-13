@@ -216,7 +216,6 @@ export default function Hero() {
               />
             </div>
 
-            {/* GET STARTED FREE Button */}
             <div className="pt-4">
               <button className="flex items-center text-gray-900 hover:bg-gray-300 hover:text-black px-8 py-3 text-lg font-semibold bg-transparent rounded-md border border-gray-300">
                 GET STARTED FREE

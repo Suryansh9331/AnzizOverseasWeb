@@ -59,7 +59,6 @@ export default function FourthSectiion() {
         </p>
       </div>
 
-      {/* Category Header */}
       <div className="flex flex-wrap justify-center gap-3 bg-[#FDE0C0] py-4 rounded-lg mb-8">
         {/* View All Button */}
         <button

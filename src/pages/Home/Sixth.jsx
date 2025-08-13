@@ -7,7 +7,7 @@ export default function Sixth() {
       <div className="w-full mx-auto flex flex-col lg:flex-row items-center lg:items-start">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 px-6 lg:px-12 py-12">
-          {/* Small Heading */}
+    
           <p
             className="text-sm font-semibold tracking-wider mb-4"
             style={{ color: "#E44F39", fontFamily: "Outfit, sans-serif" }}
