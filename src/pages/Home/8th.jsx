@@ -41,7 +41,6 @@ export default function FAQ() {
       </div>
 
       <div className="grid md:grid-cols-2 gap-10 mt-10">
-        {/* Left: FAQs */}
         <div>
           {faqs.map((faq, index) => (
             <div

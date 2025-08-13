@@ -5,7 +5,6 @@ export default function Sixth() {
   return (
     <section className="w-full bg-white font-sans">
       <div className="w-full mx-auto flex flex-col lg:flex-row items-center lg:items-start">
-        {/* Left Content */}
         <div className="w-full lg:w-1/2 px-6 lg:px-12 py-12">
     
           <p
@@ -71,7 +70,7 @@ export default function Sixth() {
         {/* Right Image */}
         <div className="w-full lg:w-1/2">
           <img
-            src="/logistics-map.png" // replace with your image path
+            src="/logistics-map.png" 
             alt="Logistics Map"
             className="w-full h-full object-cover"
           />
