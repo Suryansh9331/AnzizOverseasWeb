@@ -67,7 +67,6 @@ export default function Sixth() {
           </button>
         </div>
 
-        {/* Right Image */}
         <div className="w-full lg:w-1/2">
           <img
             src="/logistics-map.png" 

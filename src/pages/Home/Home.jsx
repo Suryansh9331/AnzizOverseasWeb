@@ -5,7 +5,7 @@ import Sixth from "./Sixth";
 
 function Home() {
   return (
-    <div className="w-full" >
+    <div  >
       
       <FourthSectiion/>
       <Sixth/>
