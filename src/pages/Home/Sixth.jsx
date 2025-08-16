@@ -1,5 +1,5 @@
 import React from "react";
-import { CheckCircle } from "lucide-react"; // For orange icons
+import { CheckCircle } from "lucide-react"; 
 
 export default function Sixth() {
   return (
