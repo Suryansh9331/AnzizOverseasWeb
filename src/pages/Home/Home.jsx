@@ -15,11 +15,11 @@ function Home() {
       <Sixth/>
       <FAQ/>
 
- <section className="w-full bg-white py-16">
+ <section className="w-full bg-white py-16 min-h-screen ">
       {/* Heading */}
       <div className="max-w-7xl mx-auto text-center px-4">
         <h2
-          className="text-3xl md:text-5xl font-bold leading-snug text-[#0F0F0F]"
+          className="text-3xl md:text-6xl font-semibold leading-snug text-gray-900"
           style={{ fontFamily: "Outfit, sans-serif" }}
         >
           A creative agency specializes in <br />
