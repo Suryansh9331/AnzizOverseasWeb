@@ -64,7 +64,7 @@ function Home() {
           <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
             300+
           </h3>
-          <p className="mt-2 text-sm md:text-base text-gray-600">
+          <p className="mt-2 text-sm md:text-base text-[#E44F39]">
             Clients Review
           </p>
         </div>
@@ -74,7 +74,7 @@ function Home() {
           <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
             120+
           </h3>
-          <p className="mt-2 text-sm md:text-base text-gray-600">
+          <p className="mt-2 text-sm md:text-base text-[#E44F39]">
             Team Member
           </p>
         </div>
@@ -84,7 +84,7 @@ function Home() {
           <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
             1k+
           </h3>
-          <p className="mt-2 text-sm md:text-base text-gray-600">
+          <p className="mt-2 text-sm md:text-base text-[#E44F39]">
             Complete Project
           </p>
         </div>
