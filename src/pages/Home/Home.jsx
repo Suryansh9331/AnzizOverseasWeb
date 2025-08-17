@@ -54,12 +54,12 @@ function Home() {
         </h2>
       </div>
 
-      {/* Stats */}
+      
       <div
         className="max-w-5xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
         style={{ fontFamily: "Poppins, sans-serif" }}
       >
-        {/* Clients Review */}
+        
         <div>
           <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
             300+
@@ -69,7 +69,7 @@ function Home() {
           </p>
         </div>
 
-        {/* Team Members */}
+        
         <div>
           <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
             120+
