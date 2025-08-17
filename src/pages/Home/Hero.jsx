@@ -92,7 +92,7 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* Image with Overlay Button */}
+            
             <div className="relative">
               <img
                 src="/image (2).png"

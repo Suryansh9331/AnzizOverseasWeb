@@ -16,7 +16,7 @@ function Home() {
       <FAQ/>
 
  <section className="w-full bg-white py-16 min-h-screen ">
-      {/* Heading */}
+      
       <div className="max-w-7xl mx-auto text-center px-4">
         <h2
           className="text-3xl md:text-6xl font-semibold leading-snug text-gray-900"
