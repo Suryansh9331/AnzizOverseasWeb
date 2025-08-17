@@ -1,7 +1,7 @@
 import React from "react";
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { ArrowRight } from "lucide-react"; // you can replace with your own arrow icon
-import logo from "../assets/logo.png"; // replace with your actual logo path
+import logo from "../../assets/images/logo2.png"; // replace with your actual logo path
 
 const Footer = () => {
   return (

@@ -1,3 +1,4 @@
+import Footer from "../../components/Common/Footer";
 import FAQ from "./8th";
 import FourthSectiion from "./Fourth";
 
@@ -10,6 +11,7 @@ function Home() {
       <FourthSectiion/>
       <Sixth/>
       <FAQ/>
+      <Footer/>
     </div>
   );
 }
