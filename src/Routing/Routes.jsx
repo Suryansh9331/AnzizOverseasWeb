@@ -6,19 +6,16 @@ const Home = lazy(() => import("../pages/Home/Home"));
 
 
 // Layout components
-import Footer from "../Component/Footer";
+import Footer from "../components/Common/Footer";
 
 const AppRoutes = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Suspense fallback={<div className="text-center p-10">Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+          
         </Routes>
       </Suspense>
       <Footer />
