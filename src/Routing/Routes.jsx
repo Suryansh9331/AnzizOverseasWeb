@@ -3,13 +3,12 @@ import { Routes, Route } from "react-router-dom";
 
 const Home = lazy(() => import("../pages/Home/Home"));
 const About = lazy(() => import("../pages/About/About"));
-const Home = lazy(() => import("../pages/Home/Home"));
+const Contact = lazy(() => import("../pages/Contact/Contact"));
 
 
 // Layout components
 import Footer from "../components/Common/Footer";
-import About from "../Pages/About/About";
-import Contact from "../pages/Contact/Contact";
+
 
 const AppRoutes = () => {
   return (
