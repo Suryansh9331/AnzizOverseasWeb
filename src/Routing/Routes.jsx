@@ -2,15 +2,10 @@
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
-// Lazy load pages
-const Home = lazy(() => import("../Pages/Home/Home"));
-const About = lazy(() => import("../Pages/About/About"));
-const Contact = lazy(() => import("../Pages/Contact/Contact"));
-const Services = lazy(() => import("../Pages/Services/Services"));
-const NotFound = lazy(() => import("../Pages/NotFound/NotFound"));
+const Home = lazy(() => import("../pages/Home/Home"));
+
 
 // Layout components
-import Navbar from "../Component/Navbar";
 import Footer from "../Component/Footer";
 
 const AppRoutes = () => {
