@@ -76,7 +76,6 @@ function Second() {
             </div>
           </div>
 
-          {/* Right Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative">
               <img
@@ -85,7 +84,6 @@ function Second() {
                 className="w-full max-w-md lg:max-w-lg xl:max-w-xl h-auto object-cover rounded-2xl"
               />
 
-              {/* Decorative elements */}
               <div className="absolute -top-4 -right-4 w-8 h-8 bg-red-500 rounded-full opacity-20"></div>
               <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-blue-500 rounded-full opacity-20"></div>
               <div className="absolute top-1/2 -left-8 w-6 h-6 bg-yellow-500 rounded-full opacity-30 hidden lg:block"></div>
