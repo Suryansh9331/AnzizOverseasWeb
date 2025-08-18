@@ -1,4 +1,3 @@
-// src/Routing/Routes.jsx
 import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
@@ -11,7 +10,6 @@ import Footer from "../components/Common/Footer";
 const AppRoutes = () => {
   return (
     <>
-      {/* <Navbar /> */}
       <Suspense fallback={<div className="text-center p-10">Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
