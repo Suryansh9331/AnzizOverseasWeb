@@ -2,6 +2,8 @@ import React, { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 
 const Home = lazy(() => import("../pages/Home/Home"));
+const About = lazy(() => import("../pages/About/About"));
+const Home = lazy(() => import("../pages/Home/Home"));
 
 
 // Layout components
