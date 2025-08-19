@@ -5,12 +5,14 @@ import Hero from "./Hero";
 import Second from "./Second";
 
 import Sixth from "./Sixth";
+import ToolsSection from "./third";
 
 function Home() {
   return (
     <div  >
       <Hero />
       <Second />
+      <ToolsSection/>
       <FourthSectiion/>
       <Sixth/>
       <FAQ/>
@@ -91,7 +93,6 @@ function Home() {
       </div>
     </section>
 
-      <Footer/>
     </div>
   );
 }
