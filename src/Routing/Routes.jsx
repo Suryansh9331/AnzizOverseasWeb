@@ -8,6 +8,8 @@ const Contact = lazy(() => import("../pages/Contact/Contact"));
 
 // Layout components
 import Footer from "../components/Common/Footer";
+import Tools from "../pages/Tools/Tools";
+import Sollutions from "../pages/Sollutions/Sollutions";
 
 
 const AppRoutes = () => {
@@ -18,6 +20,8 @@ const AppRoutes = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
+          <Route path="/tools" element={<Tools />} />
+          <Route path='/sollutions' element={<Sollutions />} />
           
         </Routes>
       </Suspense>

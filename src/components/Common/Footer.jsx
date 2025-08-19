@@ -2,6 +2,7 @@ import React from "react";
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import { ArrowRight } from "lucide-react"; // you can replace with your own arrow icon
 import logo from "../../assets/images/logo2.png"; // replace with your actual logo path
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -74,6 +75,12 @@ const Footer = () => {
             <a href="#" className="hover:text-white transition">
               » Contact Us
             </a>
+            <Link to="/tools" >
+              » Tools
+            </Link>
+            <Link to="/sollutions" >
+              » Sollution
+            </Link>
           </div>
 
           {/* Subscribe Box */}
