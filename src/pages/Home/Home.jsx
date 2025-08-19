@@ -83,7 +83,6 @@ function Home() {
             </p>
           </div>
 
-          {/* Completed Projects */}
           <div>
             <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
               1k+
@@ -108,7 +107,6 @@ function Home() {
             Unlock Markets, Build Trust, and Scale Without Borders
           </p>
 
-          {/* Button */}
           <div className="mt-6 flex justify-center">
             <button className="flex items-center gap-2 bg-[#E44F39] text-white px-6 py-3 rounded-full font-light font-['Poppins'] hover:opacity-90 transition">
               <Phone size={18} /> BOOK CALL
