@@ -7,6 +7,7 @@ import Second from "./Second";
 import BrandSection from "./Seventh";
 
 import Sixth from "./Sixth";
+import ConsultationBooking from "./Tenth";
 import ToolsSection from "./third";
 
 function Home() {
@@ -96,7 +97,7 @@ function Home() {
         </div>
       </div>
     </section>
-
+<ConsultationBooking/>
     </div>
   );
 }
