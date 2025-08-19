@@ -9,6 +9,7 @@ import { Phone } from "lucide-react";
 import Sixth from "./Sixth";
 import ConsultationBooking from "./Tenth";
 import ToolsSection from "./third";
+import TestimonialSection from "./ninth";
 
 function Home() {
   return (
@@ -94,7 +95,7 @@ function Home() {
         </div>
       </section>
       <ConsultationBooking />
-
+    <TestimonialSection/>
       <section className="w-full bg-white py-20   h-[50vh]  px-4 b">
         <div className="max-w-3xl mx-auto text-center">
           {/* Main Heading */}
@@ -115,6 +116,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+  
     </div>
   );
 }
