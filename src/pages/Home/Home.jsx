@@ -1,8 +1,10 @@
 import Footer from "../../components/Common/Footer";
 import FAQ from "./8th";
+import SupplierSection from "./Fifth";
 import FourthSectiion from "./Fourth";
 import Hero from "./Hero";
 import Second from "./Second";
+import BrandSection from "./Seventh";
 
 import Sixth from "./Sixth";
 import ToolsSection from "./third";
@@ -14,7 +16,9 @@ function Home() {
       <Second />
       <ToolsSection/>
       <FourthSectiion/>
+      <SupplierSection/>
       <Sixth/>
+      <BrandSection/>
       <FAQ/>
 
  <section className="w-full bg-white py-16 min-h-screen ">
