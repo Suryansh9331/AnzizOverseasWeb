@@ -95,7 +95,7 @@ function Home() {
       </section>
       <ConsultationBooking />
 
-      <section className="w-full bg-white py-16 px-4">
+      <section className="w-full bg-white py-20   h-[50vh]  px-4 b">
         <div className="max-w-3xl mx-auto text-center">
           {/* Main Heading */}
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 font-['Outfit']">
@@ -109,7 +109,7 @@ function Home() {
 
           {/* Button */}
           <div className="mt-6 flex justify-center">
-            <button className="flex items-center gap-2 bg-[#E44F39] text-white px-6 py-3 rounded-full font-semibold font-['Poppins'] hover:opacity-90 transition">
+            <button className="flex items-center gap-2 bg-[#E44F39] text-white px-6 py-3 rounded-full font-light font-['Poppins'] hover:opacity-90 transition">
               <Phone size={18} /> BOOK CALL
             </button>
           </div>
