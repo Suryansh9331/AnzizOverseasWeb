@@ -1,12 +1,11 @@
 import React from "react";
-import Img6 from "../../assets/Learninghub/f2banner.png"; // replace with actual image
+import Img6 from "../../assets/Learninghub/f2banner.png";
 
 const TradeStrategiesSection = () => {
   return (
     <section className="bg-white py-16 lg:py-20 font-[Outfit]">
       <div className="container max-w-6xl mx-auto px-6 lg:px-12">
 
-        {/* Video Image with Corner Borders */}
         <div className="relative mb-10">
           <img
             src={Img6}
@@ -14,7 +13,6 @@ const TradeStrategiesSection = () => {
             className="w-full h-64 sm:h-80 lg:h-96 object-cover rounded-xl"
           />
 
-          {/* Orange outline corners */}
           <span className="absolute top-0 left-0 w-12 h-12 border-t-2 border-l-2 border-[#E44F39] rounded-tl-md"></span>
           <span className="absolute top-0 right-0 w-12 h-12 border-t-2 border-r-2 border-[#E44F39] rounded-tr-md"></span>
           <span className="absolute bottom-0 left-0 w-12 h-12 border-b-2 border-l-2 border-[#E44F39] rounded-bl-md"></span>
@@ -36,7 +34,6 @@ const TradeStrategiesSection = () => {
 
         {/* Content */}
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-          {/* Left Side (Heading + Description) */}
           <div className="flex-1">
             <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-3">
               Advanced Trade Strategies

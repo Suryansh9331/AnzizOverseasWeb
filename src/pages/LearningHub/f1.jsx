@@ -1,5 +1,5 @@
 import React from "react";
-import Img1 from "../../assets/Learninghub/chart.png"; // Replace with your actual image
+import Img1 from "../../assets/Learninghub/chart.png"; 
 
 const FeaturedVideoSection = () => {
   return (
@@ -33,9 +33,7 @@ const FeaturedVideoSection = () => {
           </div>
         </div>
 
-        {/* Content Row */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-          {/* Left Side: Title + Description */}
           <div className="text-left">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">
               Import-Export Basics
@@ -45,7 +43,6 @@ const FeaturedVideoSection = () => {
             </p>
           </div>
 
-          {/* Right Side: Button */}
           <div className="text-right">
             <button
               className="inline-flex items-center gap-2 px-6 py-3 text-white font-medium rounded-full shadow-lg transition-all duration-300"

@@ -1,6 +1,5 @@
 import React from "react";
-import chartImg from "../../assets/Learninghub/chart.png"; // your bottom-right image
-
+import chartImg from "../../assets/Learninghub/chart.png"; 
 export default function HeroSection() {
   return (
     <section className="w-full bg-[#232323] min-h-screen font-[Outfit] text-white px-6 md:px-12 lg:px-20 py-20 relative overflow-hidden">
@@ -26,7 +25,6 @@ export default function HeroSection() {
         <div className="mt-10 flex justify-center">
           <button className="flex items-center gap-2 border border-white rounded-full px-8 py-3 hover:bg-[#E44F39] hover:border-[#E44F39] transition-all">
             <span className="text-base font-medium">READ MORE</span>
-            {/* Inline SVG Arrow */}
             <svg
               width="26"
               height="24"
@@ -44,7 +42,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Bottom-Right Chart Image */}
       <div className="absolute bottom-8 right-10 w-[260px] sm:w-[320px] md:w-[380px] lg:w-[420px]">
         <img
           src={chartImg}
