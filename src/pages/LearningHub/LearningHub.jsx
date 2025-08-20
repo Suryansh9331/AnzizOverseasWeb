@@ -2,6 +2,8 @@
 import React from "react";
 import HeroSection from "./Hero";
 import LearningResources from "./Reesources";
+import FeaturedVideoSection from "./f1";
+import ServicesGridSection from "./Servicecards";
 const Learninghub = () => {
 return (
     <div>
@@ -69,7 +71,11 @@ return (
                 </div>
             </div>
 
+<FeaturedVideoSection/>
+<ServicesGridSection/>
     </div>
+
+
 )
 
 }
