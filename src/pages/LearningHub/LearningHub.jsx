@@ -14,18 +14,15 @@ const Learninghub = () => {
 
       <div className="py-8 sm:py-12 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          {/* Heading */}
           <h2 className="text-2xl sm:text-3xl font-semibold text-center sm:text-left text-gray-800 mb-6 sm:mb-8">
             Explore Tools by Category
           </h2>
 
-          {/* Category Tabs Container */}
           <div className="overflow-x-auto">
             <div
               className="rounded-xl p-3 px-6 sm:px-12 flex items-center gap-2 sm:gap-4 min-w-max sm:max-w-2xl"
               style={{ backgroundColor: "#FDE0C0" }}
             >
-              {/* Active Tab - Documentation */}
               <button
                 className="px-4 sm:px-8 py-3 rounded-xl text-white font-medium text-sm sm:text-base transition-all duration-300 whitespace-nowrap"
                 style={{ backgroundColor: "#E44F39" }}
