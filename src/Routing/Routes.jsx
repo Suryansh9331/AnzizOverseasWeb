@@ -10,6 +10,7 @@ const Contact = lazy(() => import("../pages/Contact/Contact"));
 import Footer from "../components/Common/Footer";
 import Tools from "../pages/Tools/Tools";
 import Sollutions from "../pages/Sollutions/Sollutions";
+import Learninghub from "../pages/LearningHub/LearningHub";
 
 
 const AppRoutes = () => {
@@ -22,6 +23,7 @@ const AppRoutes = () => {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/tools" element={<Tools />} />
           <Route path='/solutions' element={<Sollutions />} />
+          <Route path='/learning-hub' element={<Learninghub />} />
           
         </Routes>
       </Suspense>
