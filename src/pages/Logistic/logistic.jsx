@@ -1,5 +1,5 @@
 import React from "react";
-const Verified = () => {
+const logistic = () => {
 return (
     <div>
 
@@ -7,4 +7,4 @@ return (
 )
 
 }
-export default Verified;
+export default logistic;
