@@ -6,7 +6,7 @@ import FeaturedVideoSection from "./f1";
 import ServicesGridSection from "./Servicecards";
 import TradeStrategiesSection from "./f2";
 import { Phone } from "lucide-react";
-import FourthSectiion from "../Home/Fourth";
+import FourthSectiion from "../Home/4th";
 const Learninghub = () => {
   return (
     <div>
