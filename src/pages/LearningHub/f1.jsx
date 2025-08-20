@@ -10,16 +10,13 @@ const FeaturedVideoSection = () => {
           Learning Resource Cards
         </h2>
 
-        {/* Video Card */}
         <div className="relative border-4 border-[#a8693d] rounded-tl-2xl rounded-br-2xl overflow-hidden mb-8">
-          {/* Video Image */}
           <img
             src={Img1}
             alt="Learning resource"
             className="w-full h-64 sm:h-80 lg:h-96 object-contain bg-white"
           />
 
-          {/* Play button overlay */}
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="bg-white bg-opacity-90 rounded-full p-4 lg:p-6 shadow-lg hover:bg-opacity-100 transition-all duration-300 cursor-pointer">
               <svg

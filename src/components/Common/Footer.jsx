@@ -7,12 +7,9 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-[#0F0F0F] text-white font-poppins">
-      {/* Container */}
       <div className="max-w-7xl mx-auto px-6 sm:px-8 md:px-12 py-12">
         
-        {/* Top Section */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
-          {/* Left Content */}
           <div className="max-w-lg">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-outfit font-bold mb-3">
               Get Started Now
@@ -36,7 +33,6 @@ const Footer = () => {
         {/* Divider */}
         <div className="border-t border-gray-700 my-8"></div>
 
-        {/* Middle Section */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           
           {/* Contact Info */}
