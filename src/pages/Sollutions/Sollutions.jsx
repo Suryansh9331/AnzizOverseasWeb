@@ -36,19 +36,19 @@ const Sollutions = () => {
                                 alt="Bulb" 
                                 className="w-16 h-16 lg:w-20 lg:h-20"
                             />
-                            <h1 className="text-6xl lg:text-7xl font-bold text-white">
+                            <h1 className="md:text-6xl text-4xl lg:text-7xl font-bold text-white">
                                 WE SOLVE THE
                             </h1>
                         </div>
                         <div className="flex items-center justify-center gap-4 flex-wrap mb-4">
-                            <span className="text-6xl lg:text-7xl font-bold text-white">
+                            <span className="md:text-6xl text-4xl lg:text-7xl font-bold text-white">
                                 PROBLEMS
                             </span>
-                            <span className="text-6xl lg:text-7xl  font-thin text-orange-600">
+                            <span className="md:text-6xl text-4xl lg:text-7xl  font-thin text-orange-600">
                                 THAT STOP
                             </span>
                         </div>
-                        <h1 className="text-6xl lg:text-7xl font-bold text-white">
+                        <h1 className="md:text-6xl text-4xl lg:text-7xl font-bold text-white">
                             YOUR IMPORTS.
                         </h1>
                     </div>
