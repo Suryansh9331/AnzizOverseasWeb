@@ -14,6 +14,7 @@ import TestimonialSection from "./9th";
 function Home() {
   return (
     <div>
+      <Hero/>
       <Second />
       <ToolsSection />
       <FourthSectiion />
