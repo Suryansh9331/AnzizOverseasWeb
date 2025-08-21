@@ -24,11 +24,11 @@ const Sollutions = () => {
             className="h-screen w-full bg-cover bg-center bg-no-repeat relative flex items-center justify-center"
             style={{ backgroundImage: `url(${BgImg})` }}
         >
-            <div className="container mx-auto px-6 lg:px-12 flex items-center justify-center min-h-screen">
+            <div className="container mx-auto px-6 lg:px-12 py-10 flex items-center justify-center min-h-screen">
                 {/* Content Section */}
                 <div className="text-center">
                     {/* Main Heading */}
-                    <div className="mb-12">
+                    <div className="mb-12 mt-10">
                         {/* First Line with Bulb and Text */}
                         <div className="flex items-center justify-center gap-4 mb-4">
                             <img 
@@ -36,19 +36,19 @@ const Sollutions = () => {
                                 alt="Bulb" 
                                 className="w-16 h-16 lg:w-20 lg:h-20"
                             />
-                            <h1 className="text-6xl lg:text-8xl font-bold text-white">
+                            <h1 className="text-6xl lg:text-7xl font-bold text-white">
                                 WE SOLVE THE
                             </h1>
                         </div>
                         <div className="flex items-center justify-center gap-4 flex-wrap mb-4">
-                            <span className="text-6xl lg:text-8xl font-bold text-white">
+                            <span className="text-6xl lg:text-7xl font-bold text-white">
                                 PROBLEMS
                             </span>
-                            <span className="text-6xl lg:text-8xl  font-thin text-orange-600">
+                            <span className="text-6xl lg:text-7xl  font-thin text-orange-600">
                                 THAT STOP
                             </span>
                         </div>
-                        <h1 className="text-6xl lg:text-8xl font-bold text-white">
+                        <h1 className="text-6xl lg:text-7xl font-bold text-white">
                             YOUR IMPORTS.
                         </h1>
                     </div>
@@ -57,7 +57,7 @@ const Sollutions = () => {
                     <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                         {/* Read More Button */}
                         <button className="flex items-center gap-3 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white hover:text-black transition-all duration-300 group">
-                            <span className="font-medium">READ MORE</span>
+                            <span className="font-medium">EXPLORE MORE</span>
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
                         </button>
                         

@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between w-[95%] lg:w-[95%] px-6 py-1  rounded-full bg-white/90 backdrop-blur shadow-md">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
-          <img src={logo} alt="Logo" className="h-16 w-auto" />
+          <img src={logo} alt="Logo" className=" h-10 md:h-16 w-auto" />
         </Link>
 
         {/* Desktop Menu */}
