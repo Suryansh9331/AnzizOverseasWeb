@@ -11,6 +11,7 @@ import Footer from "../components/Common/Footer";
 import Tools from "../pages/Tools/Tools";
 import Sollutions from "../pages/Sollutions/Sollutions";
 import Learninghub from "../pages/LearningHub/LearningHub";
+import Verified from "../pages/verified/verified";
 
 
 const AppRoutes = () => {
@@ -24,6 +25,7 @@ const AppRoutes = () => {
           <Route path="/tools" element={<Tools />} />
           <Route path='/solutions' element={<Sollutions />} />
           <Route path='/learning-hub' element={<Learninghub />} />
+          <Route path='/verified' element={<Verified />} />
           
         </Routes>
       </Suspense>
