@@ -26,9 +26,7 @@ function Second() {
               </h1>
             </div>
 
-            {/* Features */}
             <div className="space-y-8">
-              {/* Global Sourcing */}
               <div className="flex gap-6">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center">

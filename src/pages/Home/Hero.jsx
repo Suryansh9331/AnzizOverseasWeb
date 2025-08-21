@@ -29,7 +29,6 @@ export default function Hero() {
             <a href="#" className="text-gray-700 hover:text-black font-medium">Logistics Solution</a>
           </nav>
 
-          {/* Right side buttons */}
           <div className="flex items-center space-x-4">
             {/* Search Icon Button */}
             <button className="p-2 rounded-full hover:bg-gray-200 transition lg:mr-4">
