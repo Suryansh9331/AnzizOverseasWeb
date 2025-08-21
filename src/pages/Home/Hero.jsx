@@ -20,7 +20,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Navigation - Hidden on mobile */}
           <nav className="hidden lg:flex items-center space-x-8">
             <a href="#" className="text-gray-700 hover:text-black font-medium">Home</a>
             <a href="#" className="text-gray-700 hover:text-black font-medium">Solutions</a>

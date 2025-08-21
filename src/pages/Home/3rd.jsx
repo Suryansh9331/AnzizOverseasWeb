@@ -105,7 +105,6 @@ export default function ToolsSection() {
         </button>
       </div>
 
-      {/* Products Grid */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {categories[activeCategory].map((item, idx) => (
           <div
