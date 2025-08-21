@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import { BookOpen, MessageSquare, Phone } from "lucide-react";
-
+import img1  from "../../assets/images/c1.png"
+import img2  from "../../assets/images/c2.png"
+import img3  from "../../assets/images/c3.png"
+import img4  from "../../assets/images/c4.png"
+import img5  from "../../assets/images/c5.png"
+import img6  from "../../assets/images/c6.png"
+import img7  from "../../assets/images/c7.png"
 const suppliers = [
   {
     id: 1,
@@ -8,7 +14,7 @@ const suppliers = [
     country: "China",
     product: "Machinery",
     badge: "ISO 9001 Certified",
-    image: "/images/supplier1.png",
+    image: img1,
   },
   {
     id: 2,
@@ -16,7 +22,7 @@ const suppliers = [
     country: "India",
     product: "Electronics",
     badge: "CE, RoHS Compliant",
-    image: "/images/supplier2.png",
+    image: img2,
   },
   {
     id: 3,
@@ -24,7 +30,7 @@ const suppliers = [
     country: "Brazil",
     product: "Agriculture",
     badge: "Organic Certified",
-    image: "/images/supplier3.png",
+    image: img3,
   },
   {
     id: 4,
@@ -32,7 +38,7 @@ const suppliers = [
     country: "Turkey",
     product: "Textiles",
     badge: "GOTS Certified",
-    image: "/images/supplier4.png",
+    image: img4,
   },
   {
     id: 5,
@@ -40,7 +46,7 @@ const suppliers = [
     country: "Vietnam",
     product: "Packaging",
     badge: "FSC Certified",
-    image: "/images/supplier5.png",
+    image: img5,
   },
   {
     id: 6,
@@ -48,7 +54,7 @@ const suppliers = [
     country: "Spain",
     product: "Food",
     badge: "HACCP Certified",
-    image: "/images/supplier6.png",
+    image: img6,
   },
 ];
 

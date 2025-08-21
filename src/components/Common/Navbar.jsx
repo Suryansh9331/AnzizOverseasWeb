@@ -15,7 +15,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="absolute top-3 w-full flex justify-center font-outfit z-50">
+    <nav className="absolute top-4 w-full flex justify-center font-outfit z-50">
       {/* Floating Box */}
       <div className="flex items-center justify-between w-[95%] lg:w-[92%] px-6 py-1  rounded-full bg-white/90 backdrop-blur shadow-md">
         {/* Logo */}

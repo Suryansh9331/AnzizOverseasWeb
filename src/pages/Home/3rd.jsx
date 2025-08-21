@@ -7,7 +7,7 @@ const categories = {
       title: "Supplier Discovery",
       description:
         "Easily search and filter suppliers based on your specific requirements and industry.",
-      img: "https://images.unsplash.com/photo-1581093458791-9c1e6d6dfb55?q=80&w=600",
+      img: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=600",
     },
     {
       title: "Product Catalog",
@@ -37,7 +37,7 @@ const categories = {
       title: "Documentation Support",
       description:
         "Ensure compliance with trade regulations through our comprehensive documentation services.",
-      img: "https://images.unsplash.com/photo-1581092334651-ddf3d8e2f0af?q=80&w=600",
+      img: "https://images.unsplash.com/photo-1590650046871-92c887180603?q=80&w=600",
     },
   ],
   Logistics: [
@@ -49,7 +49,7 @@ const categories = {
     {
       title: "Freight Tracking",
       description: "Track international freight shipments in real-time.",
-      img: "https://images.unsplash.com/photo-1506617420156-8e4536971650?q=80&w=600",
+      img: "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?q=80&w=600",
     },
   ],
   Frauds: [
@@ -72,63 +72,82 @@ export default function ToolsSection() {
   const [activeCategory, setActiveCategory] = useState("Documentation");
 
   return (
-    <div className="bg-white py-18 px-4 sm:px-6 lg:px-12 min-h-screen ">
-      {/* Heading */}
-      <h2 className="text-xl md:text-2xl font-bold font-outfit mb-6">
-        Smart Tools Built for Global Buyers
-      </h2>
+    <div className="bg-white py-12 px-4 sm:px-6 lg:px-16">
+      {/* Constrain the inner content so the category bar won't fill entire screen */}
+      <div className=" mx-auto">
+        {/* Heading */}
+        <h2 className="text-xl md:text-2xl font-bold font-outfit mb-6 text-center lg:text-left">
+          Smart Tools Built for Global Buyers
+        </h2>
 
-      {/* Header Category Box */}
-      <div className="inline-flex items-center gap-2 bg-[#FDE0C0] rounded-lg px-2 py-2 mb-8">
-        {Object.keys(categories).map((cat) => (
+        {/* Category box: inline-flex so it sizes to content and wraps when needed */}
+        <div className="inline-flex flex-wrap items-center gap-2 bg-[#FDE0C0] rounded-lg px-3 py-2 mb-8 mx-auto lg:mx-0">
+          {Object.keys(categories).map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              aria-pressed={activeCategory === cat}
+              className={`px-2 py-2 rounded-md font-poppins transition text-sm md:text-base whitespace-nowrap ${
+                activeCategory === cat
+                  ? "bg-[#E44F39] text-white font-medium shadow-sm"
+                  : "bg-transparent text-black hover:text-[#E44F39]"
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        {/* Navigation Arrows (layout-preserving) */}
+        <div className="flex justify-center lg:justify-end items-center mb-6 gap-3">
           <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
-            className={`px-4 py-2 rounded-md font-poppins transition text-sm md:text-base ${
-              activeCategory === cat
-                ? "bg-[#E44F39] text-white font-medium"
-                : "bg-transparent text-black hover:text-[#E44F39]"
-            }`}
+            className="p-2 border rounded-full hover:bg-gray-100"
+            aria-label="previous"
           >
-            {cat}
+            <ChevronLeft className="w-5 h-5" />
           </button>
-        ))}
-      </div>
-
-      {/* Navigation Arrows */}
-      <div className="flex justify-end items-center mb-4 gap-2">
-        <button className="p-2 border rounded-full hover:bg-gray-100">
-          <ChevronLeft />
-        </button>
-        <button className="p-2 border rounded-full hover:bg-gray-100">
-          <ChevronRight />
-        </button>
-      </div>
-
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {categories[activeCategory].map((item, idx) => (
-          <div
-            key={idx}
-            className="bg-white  rounded-xl overflow-hidden hover:shadow-lg transition"
+          <button
+            className="p-2 border rounded-full hover:bg-gray-100"
+            aria-label="next"
           >
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-full h-54 object-cover"
-            />
-            <div className="p-5">
-              <h3 className="font-outfit text-lg font-semibold mb-2">
-                {item.title}
-              </h3>
-              <p className="font-poppins text-sm text-gray-600 mb-4">
-                {item.description}
-              </p>
-              <button className="bg-[#E44F39] text-white px-4 py-2 rounded-full font-poppins text-sm">
-                USE TOOL →
-              </button>
-            </div>
-          </div>
-        ))}
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Responsive card grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {categories[activeCategory].map((item, idx) => (
+            <article
+              key={idx}
+              className="bg-white rounded-xl overflow-hidden  hover:shadow-lg transition flex flex-col"
+            >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-full h-44 md:h-54 lg:h-72 object-cover rounded-xl"
+              />
+              <div className="p-5 flex flex-col flex-1">
+                <h3 className="font-outfit text-xl font-bold mb-2">
+                  {item.title}
+                </h3>
+                <p className="font-poppins text-sm text-gray-600 mb-4 flex-grow">
+                  {item.description}
+                </p>
+
+                {/* Restored button */}
+                <div className="mt-2">
+                  <button
+                    className="bg-[#E44F39] text-white px-4 py-2 rounded-full font-poppins text-sm inline-flex items-center gap-2"
+                    aria-label={`Use ${item.title}`}
+                  >
+                    <span>USE TOOL</span>
+                    <span aria-hidden>→</span>
+                  </button>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </div>
   );
