@@ -1,20 +1,19 @@
 import Footer from "../../components/Common/Footer";
 import FAQ from "./8th";
-import SupplierSection from "./Fifth";
-import FourthSectiion from "./Fourth";
+import SupplierSection from "./5th";
+import FourthSectiion from "./4th";
 import Hero from "./Hero";
-import Second from "./Second";
-import BrandSection from "./Seventh";
+import Second from "./2nd";
+import BrandSection from "./7th";
 import { Phone } from "lucide-react";
-import Sixth from "./Sixth";
-import ConsultationBooking from "./Tenth";
-import ToolsSection from "./third";
+import Sixth from "./6th";
+import ConsultationBooking from "./10th";
+import ToolsSection from "./3rd";
 import TestimonialSection from "./9th";
 
 function Home() {
   return (
     <div>
-      <Hero />
       <Second />
       <ToolsSection />
       <FourthSectiion />

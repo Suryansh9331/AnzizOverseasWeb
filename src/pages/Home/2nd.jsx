@@ -1,3 +1,5 @@
+import Navbar from "../../components/Common/Navbar";
+
 function Second() {
   return (
     <div className="min-h-screen bg-gray-50">

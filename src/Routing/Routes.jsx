@@ -12,12 +12,14 @@ import Tools from "../pages/Tools/Tools";
 import Sollutions from "../pages/Sollutions/Sollutions";
 import Learninghub from "../pages/LearningHub/LearningHub";
 import Verified from "../pages/verified/verified";
+import Navbar from "../components/Common/Navbar";
 
 
 const AppRoutes = () => {
   return (
     <>
       <Suspense fallback={<div className="text-center p-10">Loading...</div>}>
+       <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
