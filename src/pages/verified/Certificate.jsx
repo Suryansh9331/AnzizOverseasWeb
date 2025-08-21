@@ -15,7 +15,6 @@ const ComplianceCertificates = () => {
           Compliance Certificates
         </h2>
 
-        {/* List container */}
         <div className="bg-[#F7FAFC] p-4 md:p-6 rounded-md">
           {certificates.map((cert, index) => (
             <div
@@ -24,12 +23,10 @@ const ComplianceCertificates = () => {
                 index !== certificates.length - 1 ? "border-b border-gray-200" : ""
               }`}
             >
-              {/* Certificate name */}
               <span className="text-[#0D171C] text-sm font-semibold md:text-base">
                 {cert.name}
               </span>
 
-              {/* View button */}
               <button className="bg-[#E44F39] text-white text-xs md:text-sm px-5 py-1.5 rounded-full font-[Outfit] hover:opacity-90 transition">
                 VIEW
               </button>
