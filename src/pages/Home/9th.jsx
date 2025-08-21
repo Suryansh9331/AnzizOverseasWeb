@@ -1,76 +1,92 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
-import { Quote, Star } from "lucide-react";
-import "swiper/css";
+import Img7 from '../../assets/sollutions/image7.png'
+import Img8 from '../../assets/sollutions/image8.png'
+import Img9 from '../../assets/sollutions/image9.png'
+import { Phone } from 'lucide-react'
+const GlobalTradeSection = () => {
+  const stats = [
+    { number: "300+", label: "Clients Review" },
+    { number: "120+", label: "Team Member" },
+    { number: "1k+", label: "Complete Project" }
+  ]
 
-const testimonials = [
-  {
-    name: "Ralph Edwards",
-    role: "Product Manager",
-    text: "A creative agency providing an innovative and unique solutions to businesses build their brand",
-  },
-  {
-    name: "Marvin McKinney",
-    role: "Nursing Assistant",
-    text: "A creative agency providing an innovative and unique solutions to businesses build their brand",
-  },
-  {
-    name: "Devon Lane",
-    role: "Marketing Coordinator",
-    text: "A creative agency providing an innovative and unique solutions to businesses build their brand",
-  },
-];
-
-export default function TestimonialSection() {
   return (
-    <section className="w-full bg-white py-20 px-4 font-poppins">
-      <div className="max-w-6xl mx-auto text-center">
-        {/* Subheading */}
-        <p className="text-[#E44F39] text-sm font-medium tracking-wider uppercase mb-2">
-          ------ Client Testimonial ------
-        </p>
-
+    <div className="bg-gray-50 py-16 lg:py-24">
+      <div className="container mx-auto px-6 lg:px-12">
+        
         {/* Main Heading */}
-        <h2 className="font-outfit text-4xl md:text-5xl font-bold mb-12">
-          Excellence in Every Pixel <br />
-          Where <span className="text-[#E44F39]">Ideas</span>
-        </h2>
-
-        {/* Swiper Carousel */}
-        <Swiper
-          modules={[Autoplay]}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          centeredSlides={true}
-          slidesPerView={"auto"}
-          spaceBetween={30}
-          loop={true}
-          className="pb-12"
-        >
-          {testimonials.map((t, i) => (
-            <SwiperSlide key={i} className="!w-[85%] sm:!w-[60%] md:!w-[40%] lg:!w-[32%] py-4">
-              {({ isActive }) => (
-                <div
-                  className={`rounded-lg shadow-md border p-6 text-left bg-white transition-all duration-500
-                  ${isActive ? "scale-105 -translate-y-2 z-20" : "scale-95 opacity-60 blur-[1px] z-10"}
-                `}
-                >
-                  <h3 className="font-outfit text-lg font-bold">{t.name}</h3>
-                  <p className="text-sm text-gray-500 mb-3">{t.role}</p>
-                  <p className="text-gray-700 mb-6">{t.text}</p>
-                  <div className="flex justify-between items-center">
-                    <Quote className="text-[#E44F39]" />
-                    <div className="flex gap-1 text-[#E44F39]">
-                      {[...Array(5)].map((_, idx) => (
-                        <Star key={idx} size={16} fill="#E44F39" stroke="none" />
-                      ))}
-                    </div>
-                  </div>
+        <div className="text-center mb-16 lg:mb-24">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-800 leading-tight">
+              <div className="mb-2">
+                A creative agency specializes in
+              </div>
+              
+              <div className="flex flex-wrap items-center justify-center gap-2 lg:gap-4 mb-2">
+                <span>crafting</span>
+                <div className="flex -space-x-2">
+                  <img 
+                    src={Img8} 
+                    alt="Team member 1"
+                    className="w-24 h-10 sm:w-12 sm:h-12 lg:w-40 lg:h-16 rounded-full border-2 border-white object-cover"
+                  />
+                  
                 </div>
-              )}
-            </SwiperSlide>
+                <span>unique and impact and</span>
+              </div>
+              
+              <div className="flex flex-wrap items-center justify-center gap-2 lg:gap-4">
+                <span>digital solutions</span>
+                <div className="flex -space-x-2">
+                  <img 
+                    src={Img9} 
+                    alt="Client 1"
+                    className="w-28 h-10 sm:w-12 sm:h-12 lg:w-40 lg:h-16 rounded-full border-2 border-white object-cover"
+                  />
+                  
+                </div>
+                <span>for clients</span>
+              </div>
+            </h2>
+          </div>
+        </div>
+
+        {/* Stats Section */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-12 mb-16 lg:mb-20">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center">
+              <div 
+                className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-2"
+                style={{ color: '#E44F39' }}
+              >
+                {stat.number}
+              </div>
+              <div 
+                className="text-base lg:text-lg font-medium"
+                style={{ color: '#E44F39' }}
+              >
+                {stat.label}
+              </div>
+            </div>
           ))}
-        </Swiper>
+        </div>
+
+        {/* CTA Section */}
+        {/* <div className="text-center">
+          <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-8">
+            Ready to Expand Your Global Trade?
+          </h3>
+          
+          <button 
+            className="inline-flex items-center gap-3 text-white px-8 py-4 lg:px-10 lg:py-5 rounded-full font-medium text-base lg:text-lg transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1"
+            style={{ backgroundColor: '#E44F39' }}
+          >
+            <Phone className="w-5 h-5 lg:w-6 lg:h-6" />
+            <span>BOOK CALL</span>
+          </button>
+        </div> */}
+
       </div>
-    </section>
-  );
+    </div>
+  )
 }
+export default GlobalTradeSection;

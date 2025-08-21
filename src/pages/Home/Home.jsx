@@ -7,9 +7,10 @@ import Second from "./2nd";
 import BrandSection from "./7th";
 import { Phone } from "lucide-react";
 import Sixth from "./6th";
-import ConsultationBooking from "./10th";
+import ConsultationBooking from "./11th";
 import ToolsSection from "./3rd";
-import TestimonialSection from "./9th";
+import TestimonialSection from "./10th";
+import GlobalTradeSection from "./9th";
 
 function Home() {
   return (
@@ -22,77 +23,8 @@ function Home() {
       <Sixth />
       <BrandSection />
       <FAQ />
-
-      <section className="w-full bg-white py-16 min-h-screen ">
-        <div className="max-w-7xl mx-auto text-center px-4">
-          <h2
-            className="text-3xl md:text-6xl font-semibold leading-snug text-gray-900"
-            style={{ fontFamily: "Outfit, sans-serif" }}
-          >
-            A creative agency specializes in <br />
-            crafting{" "}
-            <span className="inline-block align-middle">
-              <img
-                src="/images/puzzle.png"
-                alt="unique"
-                className="inline-block h-10 w-20 rounded-full object-cover"
-              />
-            </span>{" "}
-            unique and impact and <br />
-            digital solutions{" "}
-            <span className="inline-flex -space-x-3 align-middle">
-              <img
-                src="/images/user1.jpg"
-                alt="team1"
-                className="w-10 h-10 rounded-full border-2 border-white object-cover"
-              />
-              <img
-                src="/images/user2.jpg"
-                alt="team2"
-                className="w-10 h-10 rounded-full border-2 border-white object-cover"
-              />
-              <img
-                src="/images/user3.jpg"
-                alt="team3"
-                className="w-10 h-10 rounded-full border-2 border-white object-cover"
-              />
-            </span>{" "}
-            for clients
-          </h2>
-        </div>
-
-        <div
-          className="max-w-5xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
-          style={{ fontFamily: "Poppins, sans-serif" }}
-        >
-          <div>
-            <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
-              300+
-            </h3>
-            <p className="mt-2 text-sm md:text-base text-[#E44F39]">
-              Clients Review
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
-              120+
-            </h3>
-            <p className="mt-2 text-sm md:text-base text-[#E44F39]">
-              Team Member
-            </p>
-          </div>
-
-          <div>
-            <h3 className="text-4xl md:text-5xl font-bold text-[#E44F39]">
-              1k+
-            </h3>
-            <p className="mt-2 text-sm md:text-base text-[#E44F39]">
-              Complete Project
-            </p>
-          </div>
-        </div>
-      </section>
+<GlobalTradeSection/>
+    
       <ConsultationBooking />
       <TestimonialSection />
       <section className="w-full bg-white py-20   h-[50vh]  px-4 b">

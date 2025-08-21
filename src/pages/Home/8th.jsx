@@ -1,101 +1,200 @@
-import React, { useState } from "react";
-import { ChevronDown, ChevronRight } from "lucide-react";
-import { HiOutlineMinus } from "react-icons/hi";
+import { useState } from "react";
 
-export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState(0);
+import ContactBtnImg from "../../assets/tools/contact-btn.png";
 
-  const faqs = [
+
+const FAQSection = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const faqData = [
     {
+      id: 1,
       question: "What types of businesses do you support?",
       answer:
-        "Car service is essential for maintaining the performance and maintaining the performance and longevity. Car service is essential for maintaining."
+        "Car service is essential for maintaining the performance and maintaining the performance and longevity Car service is essential for maintaining",
     },
     {
+      id: 2,
       question: "What are the signs of brake wear?",
       answer:
-        "Common signs include squeaking noises, longer stopping distances, or a vibrating brake pedal. Regular checks can help prevent accidents."
+        "Common signs include squeaking or grinding noises, vibration when braking, longer stopping distances, and the brake pedal feeling soft or spongy.",
     },
     {
+      id: 3,
       question: "Can regular maintenance prevent major repairs?",
       answer:
-        "Yes. Consistent maintenance catches small issues before they become expensive repairs, increasing your car's lifespan."
+        "Yes, regular maintenance can significantly reduce the likelihood of major repairs by catching issues early and keeping your vehicle systems running efficiently.",
     },
     {
+      id: 4,
       question: "Are scheduled service intervals important for my car?",
       answer:
-        "Absolutely. They ensure your vehicle performs efficiently, remains safe, and retains resale value over time."
-    }
+        "Absolutely. Following scheduled service intervals helps maintain warranty coverage, ensures optimal performance, and prevents costly breakdowns.",
+    },
   ];
 
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? -1 : index);
+  };
+
   return (
-    <section className="max-w-7xl mx-auto px-4 py-12 md:py-20 font-[Outfit]">
-      {/* Top label */}
-      <div className="text-center mb-4">
-        <p className="text-[#E44F39] uppercase tracking-wide text-sm">
-          ----- Ask Question -----
-        </p>
-        <h2 className="text-3xl md:text-5xl font-bold mt-2">
-          Got Questions? We've Got Answers
-        </h2>
-      </div>
-
-      <div className="grid md:grid-cols-2 gap-10 mt-10">
-        <div>
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className={`border-b py-4 ${
-                openIndex === index ? "border-[#E44F39]" : "border-gray-200"
-              }`}
-            >
-              <button
-                onClick={() =>
-                  setOpenIndex(openIndex === index ? null : index)
-                }
-                className="flex justify-between items-center w-full text-left"
-              >
-                <div className="flex items-center gap-2">
-                  <span className="font-bold">
-                    {String(index + 1).padStart(2, "0")}.
-                  </span>
-                  <span className="font-semibold">{faq.question}</span>
-                </div>
-                <span className="text-[#E44F39]">
-                  {openIndex === index ? (
-                    <ChevronDown size={22} />
-                  ) : (
-                    <ChevronRight size={22} />
-                  )}
-                </span>
-              </button>
-              {openIndex === index && (
-                <p className="mt-2 text-gray-600 font-[Poppins] text-sm leading-relaxed">
-                  {faq.answer}
-                </p>
-              )}
+    <div className="py-12 sm:py-16 px-4 sm:px-6 bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-12 sm:mb-16">
+          <div className="flex items-center justify-center mb-6 sm:mb-8">
+            {/* Left Dotted Line */}
+            <div className="flex-1 max-w-8 sm:max-w-16">
+              <div
+                className="h-px w-full"
+                style={{
+                  backgroundImage: `repeating-linear-gradient(to right, #E44F39 0, #E44F39 4px, transparent 4px, transparent 8px)`,
+                }}
+              ></div>
             </div>
-          ))}
+
+            {/* Text */}
+            <div
+              className="px-4 sm:px-6 text-xs sm:text-sm font-medium tracking-wider uppercase"
+              style={{ color: "#E44F39" }}
+            >
+              ASK QUESTION
+            </div>
+
+            {/* Right Dotted Line */}
+            <div className="flex-1 max-w-8 sm:max-w-16">
+              <div
+                className="h-px w-full"
+                style={{
+                  backgroundImage: `repeating-linear-gradient(to right, #E44F39 0, #E44F39 4px, transparent 4px, transparent 8px)`,
+                }}
+              ></div>
+            </div>
+          </div>
+
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            Got Questions? We've
+            <br className="hidden sm:block" />
+            Got Answers
+          </h2>
         </div>
 
-        {/* Right: Info block */}
-        <div className="flex flex-col items-center md:items-start text-center md:text-left">
-          {/* Icon */}
-          <div className="bg-[#E44F39] p-4 rounded-full mb-4">
-            {/* Replace with your exact icon */}
-            <HiOutlineMinus size={30} color="#fff" />
+        {/* Main Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 items-start">
+          {/* Left Side - FAQ */}
+          <div className="space-y-4 sm:space-y-6">
+            {faqData.map((faq, index) => (
+              <div
+                key={faq.id}
+                className="border-b border-gray-200 pb-4 sm:pb-6"
+              >
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="flex items-start justify-between w-full text-left gap-4"
+                >
+                  <div className="flex items-start space-x-3 sm:space-x-4 flex-1">
+                    <span className="text-gray-600 font-medium text-base sm:text-lg flex-shrink-0 mt-1">
+                      0{faq.id}.
+                    </span>
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 leading-tight">
+                      {faq.question}
+                    </h3>
+                  </div>
+                  <div
+                    className="w-8 h-8 rounded-full border-2 flex items-center justify-center flex-shrink-0 mt-1"
+                    style={{ borderColor: "#E44F39" }}
+                  >
+                    {activeIndex === index ? (
+                      <svg
+                        className="w-4 h-4"
+                        style={{ color: "#E44F39" }}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    ) : (
+                      <svg
+                        className="w-4 h-4"
+                        style={{ color: "#E44F39" }}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    )}
+                  </div>
+                </button>
+
+                {activeIndex === index && (
+                  <div className="mt-4 pl-6 sm:pl-8">
+                    <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
-          <h3 className="text-xl font-bold">Brand Bliss Creations</h3>
-          <p className="text-gray-600 mt-2 font-[Poppins] text-sm leading-relaxed max-w-xs">
-            A creative agency speciali providing innovative and unique solutions
-            to businesses build.
-          </p>
-          <button className="mt-6 flex items-center gap-2 border border-[#E44F39] rounded-full px-5 py-2 text-sm font-medium hover:bg-[#E44F39] hover:text-white transition">
-            CONTACT US
-            <ChevronRight size={18} />
-          </button>
+
+          {/* Right Side - Brand Info */}
+          <div className="flex flex-col items-center text-center space-y-6 sm:space-y-8">
+            {/* Circular Logo */}
+            <div
+              className="w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center"
+              style={{ backgroundColor: "#E44F39" }}
+            >
+              <svg
+                className="w-10 h-10 sm:w-12 sm:h-12 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                />
+              </svg>
+            </div>
+
+            {/* Brand Name */}
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900">
+              Brand Bliss Creations
+            </h3>
+
+            {/* Description */}
+            <p className="text-gray-600 leading-relaxed max-w-md text-sm sm:text-base">
+              A creative agency speciali providing innovative and unique
+              solutions to businesses build
+            </p>
+
+            {/* Contact Us Button */}
+            <button className="flex items-center text-gray-900 font-medium hover:text-gray-700 transition-colors group text-sm sm:text-base">
+              CONTACT US
+              <img
+                src={ContactBtnImg}
+                alt="Contact icon"
+                className="w-12 sm:w-16 h-8 sm:h-10 rounded-lg ml-4"
+              />
+            </button>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
+export default FAQSection;
