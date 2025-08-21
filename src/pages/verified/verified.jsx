@@ -1,13 +1,14 @@
 import React from "react";
 import Hero from "./Hero";
 import TrustBadge from "./trustbadge";
+import ExporterCards from "./Exportercards";
 const Verified = () => {
-return (
+  return (
     <div>
-<Hero/>
-<TrustBadge/>
+      <Hero />
+      <TrustBadge />
+      <ExporterCards />
     </div>
-)
-
-}
+  );
+};
 export default Verified;
