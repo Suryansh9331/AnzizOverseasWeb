@@ -556,7 +556,6 @@ const ContactSection = () => {
     return (
         <div className="py-12 sm:py-16 px-4 sm:px-6 bg-white">
             <div className="max-w-7xl mx-auto">
-                {/* Main Content Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 sm:gap-16 mb-16 sm:mb-20">
                     {/* Left Side - Contact Form */}
                     <div className="space-y-6 sm:space-y-8">
