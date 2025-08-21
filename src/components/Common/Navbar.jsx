@@ -17,14 +17,14 @@ export default function Navbar() {
   return (
     <nav className="absolute top-6 w-full flex justify-center font-outfit z-50">
       {/* Floating Box */}
-      <div className="flex items-center justify-between w-[95%] lg:w-[90%] px-6  rounded-full bg-white/90 backdrop-blur shadow-md">
+      <div className="flex items-center justify-between w-[95%] lg:w-[95%] px-6 py-1  rounded-full bg-white/90 backdrop-blur shadow-md">
         {/* Logo */}
         <Link to="/" className="flex-shrink-0">
           <img src={logo} alt="Logo" className="h-16 w-auto" />
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-9 items-center">
+        <div className="hidden md:flex space-x-8 items-center">
           {navLinks.map((link) => (
             <Link
               key={link.name}
