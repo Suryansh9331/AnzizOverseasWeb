@@ -27,7 +27,7 @@ const AppRoutes = () => {
           <Route path="/tools" element={<Tools />} />
           <Route path='/solutions' element={<Sollutions />} />
           <Route path='/learning-hub' element={<Learninghub />} />
-          <Route path='/verified' element={<Verified />} />
+          <Route path='/verified-supplier' element={<Verified />} />
           
         </Routes>
       </Suspense>
