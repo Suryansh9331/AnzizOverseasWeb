@@ -6,8 +6,8 @@ export default function Hero() {
       <div className="container mx-auto px-6 md:px-12 py-16 lg:py-28 flex flex-col lg:flex-row items-center gap-10">
         
         {/* Left Side Content */}
-        <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
-          <h2 className="text-3xl md:text-4xl lg:text-7xl font-bold leading-tight">
+        <div className="w-full lg:w-1/2 space-y-6 text-center lg:text-left lg:mt-8 md:mt-20 mt-8 ">
+          <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold leading-tight">
             Verified Exporter{" "}
             <span className="text-[#E44F39]">Showroom</span>
           </h2>
