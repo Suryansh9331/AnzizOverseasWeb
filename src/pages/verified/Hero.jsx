@@ -1,6 +1,5 @@
 import React from "react";
-import worldMap from "../../assets/sollutions/hero-bg.png"; // replace with your image path
-
+import worldMap from "../../assets/sollutions/hero-bg.png"; 
 export default function Hero() {
   return (
     <section className="w-full min-h-screen bg-[#232323] font-[Outfit] text-white">
