@@ -1,5 +1,5 @@
 import React from "react";
-import brandBanner from "../../assets/images/logosbanner.png"; // replace with your image path
+import brandBanner from "../../assets/images/logosbanner.png"; 
 
 export default function BrandSection() {
   return (

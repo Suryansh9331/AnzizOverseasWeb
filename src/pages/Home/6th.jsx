@@ -1,5 +1,5 @@
 import Img7 from "../../assets/sollutions/image7.png"
-import { Check, Phone } from "lucide-react"; // clean vector icons
+import { Check, Phone } from "lucide-react"; 
 const StreamlineSupplyChain = () => {
   const features = [
     "Real-Time Tracking",
@@ -16,7 +16,6 @@ const StreamlineSupplyChain = () => {
         <div className="flex-1 px-6 sm:px-8 lg:px-16 py-8 lg:py-20 flex items-center">
           <div className="w-full max-w-2xl">
             
-            {/* Title with dotted line */}
             <div className="flex items-center mb-8">
               {/* Left Dotted Line */}
               <div className="flex-1 max-w-16">
@@ -87,7 +86,6 @@ const StreamlineSupplyChain = () => {
             className="w-full object-fit"
           />
           
-          {/* Optional: Add some overlay elements to simulate the UI elements shown in the reference */}
           <div className="absolute inset-0 bg-gradient-to-l from-transparent via-transparent to-gray-50 opacity-20 lg:opacity-10"></div>
         </div>
 
