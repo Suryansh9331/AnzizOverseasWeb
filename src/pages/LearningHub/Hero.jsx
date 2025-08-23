@@ -2,8 +2,8 @@ import React from "react";
 import chartImg from "../../assets/Learninghub/chart.png"; 
 export default function HeroSection() {
   return (
-    <section className="w-full bg-[#232323] min-h-screen font-[Outfit] text-white px-6 md:px-12 lg:px-20 py-20 relative overflow-hidden">
-      <div className="max-w-5xl mx-auto relative z-10 text-center">
+    <section className="w-full bg-[#232323] min-h-screen font-[Outfit] text-white px-6 md:px-12 lg:px-20 py-28 relative overflow-hidden">
+      <div className="max-w-5xl mx-auto relative z-10 text-center mt-8">
         
         {/* Main Heading */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-snug mx-auto text-center">
