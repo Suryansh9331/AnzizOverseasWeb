@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export default function ConsultationBooking() {
-  const [currentMonth, setCurrentMonth] = useState(5); // June (0-based index)
+  const [currentMonth, setCurrentMonth] = useState(5); 
   const [currentYear, setCurrentYear] = useState(2025);
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState("");
@@ -51,7 +51,6 @@ export default function ConsultationBooking() {
   return (
     <div className="min-h-screen bg-[#FCFFE9] font-[Poppins] px-4 py-16">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-3 gap-10">
-        {/* ========== LEFT: Calendar Section ========== */}
         <div>
           {/* Heading outside card */}
           <h2 className="text-4xl font-[Outfit] font-bold mb-6">Ask an expert</h2>
@@ -150,7 +149,6 @@ export default function ConsultationBooking() {
           </div>
         </div>
 
-        {/* ========== RIGHT: Meeting Details ========== */}
         <div className="relative">
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center">
@@ -201,7 +199,6 @@ export default function ConsultationBooking() {
             </div>
           </div>
 
-          {/* Chat button (absolute inside section only) */}
           <div className="absolute bottom-0 right-0">
             <button className="w-12 h-12 bg-[#E44F39] rounded-full flex items-center justify-center shadow-lg">
               <MessageIcon />

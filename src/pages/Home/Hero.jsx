@@ -81,15 +81,12 @@ export default function Hero() {
               </button>
             </div>
 
-            {/* Second Image with Description + Button */}
             <div className="flex flex-col w-full lg:w-1/2">
-              {/* Description above second image */}
               <p className="text-[#403F3F]  font-[poppins] text-base lg:text-md mb-4 max-w-md">
                 Trusted by buyers worldwide to fix shipping delays, customs
                 issues, fraud risks, and more.
               </p>
 
-              {/* Image wrapper with button in corner */}
               <div className="relative">
                 <img
                   src={img2}
@@ -97,7 +94,6 @@ export default function Hero() {
                   className="w-full rounded-xl object-cover"
                 />
 
-                {/* Button overlaps bottom-right of image */}
                 <button className="absolute -bottom-1  -right-2 bg-[#E44F39] hover:bg-[#c63b2a] transition text-white text-xs font-semibold px-4 py-3 rounded-full shadow-md">
                   EXPLORE HOW IT WORKS
                 </button>
