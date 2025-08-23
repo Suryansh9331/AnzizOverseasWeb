@@ -163,10 +163,7 @@ const ShippingSection = () => {
                 </svg>
               </div>
             </div>
-            {/* Shipping Delays Label */}
-            {/* <div className="absolute top-6 left-6 bg-white bg-opacity-90 px-4 py-2 rounded-lg">
-              <span className="text-gray-700 font-medium text-sm lg:text-base">SHIPPING DELAYS</span>
-            </div> */}
+           
           </div>
         </div>
 
