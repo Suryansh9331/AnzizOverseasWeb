@@ -95,15 +95,15 @@ const Tools = () => {
     <>
       {/* Hero Section */}
       <div
-        className="min-h-screen w-full bg-cover bg-center bg-no-repeat relative flex items-center justify-center px-4 sm:px-6 lg:px-8"
+        className="min-h-screen w-full bg-cover bg-center bg-no-repeat relative flex items-center justify-center px-4 sm:px-6 lg:px-8 lg:py-20"
         style={{ backgroundImage: `url(${BgImg})` }}
       >
         {/* Content Container */}
-        <div className="relative z-10 w-full max-w-7xl mx-auto">
+        <div className="relative z-10 w-full max-w-8xl mx-auto">
           <div className="max-w-4xl mx-auto text-center sm:text-left">
             {/* Main Heading */}
             <h1 className="text-white mb-6 sm:mb-8">
-              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight mb-2 sm:mb-4">
+              <div className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-5xl 2xl:text-8xl font-bold leading-tight mb-2 sm:mb-4">
                 SMART TOOL BUILT FOR
               </div>
 
@@ -762,3 +762,6 @@ const ContactSection = () => {
 };
 
 export default Tools;
+
+
+
